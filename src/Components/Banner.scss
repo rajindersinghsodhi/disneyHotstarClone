@@ -1,0 +1,108 @@
+#banner{
+    >video{
+        min-height: 100%;
+        min-width: 100%;
+        // margin-left: 120px;
+        position: fixed;
+        // top: 0;
+        z-index: 1;
+        margin-top: -65px;
+    }
+}
+
+
+#bannerDetails{
+    color: rgba(255, 255, 255, 0.749);
+    position: absolute;
+    top: 200px;
+    left: 110px;
+    background-color: transparent;
+    margin-left: 10px;
+    z-index: 100;
+    > h1 {
+        font-size: 50px;
+        color: white;
+    }
+}
+
+
+#bannerDetails *{
+    background-color: transparent;
+    padding: 5px 0 5px 0px;
+}
+
+
+#extralDetails{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 13px;
+    max-width: 320px;
+    color: white;
+}
+
+#bannerDescription{
+    font-size: 15px;
+    max-width: 400px;
+}
+
+#bannerGenre{
+    margin: 20px 0 0 0;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+
+#bannerPlayButton{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 0 0;
+    padding-top: 12px;
+    height: 50px;
+    width: 350px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(193, 193, 193, 0.333);
+    border-color: transparent;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+
+    > svg {
+        margin-right: 10px;
+    }
+}
+
+#rating{
+    > span {
+        padding: 1px 10px 1px 10px;
+        border-radius: 5px;
+        background-color:rgba(193, 193, 193, 0.333);
+    }
+}
+
+#first{
+    list-style: none;
+}
+
+#buttons{
+    display: flex;
+}
+
+#addTo{
+    margin: 40px 0 0 18px;
+    font-size: 24px;
+    background-color: rgba(193, 193, 193, 0.333);
+    padding: 13px;
+    border-radius: 10px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+#bannerPlayButton:hover{
+    transform: scale(1.1);
+}
+
+#addTo:hover{
+    transform: scale(1.1);
+}

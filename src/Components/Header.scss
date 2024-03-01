@@ -1,0 +1,43 @@
+.header{
+    width: 108px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+
+    > img {
+        background-color: rgba(0, 0, 0, 0);
+        width: 55%;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+}
+
+
+.icons {
+    color: rgba(193, 193, 193, 0.607);
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.2rem;
+    margin-top: 22px;
+    margin-left: 40px;
+    height: 67%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icons > svg {
+    cursor: pointer;
+}
+    
+.glarge:hover {
+    transform: scale(1.2);
+    color: white;
+}
+    
+.glarge {
+    background-color: transparent;
+}
+
