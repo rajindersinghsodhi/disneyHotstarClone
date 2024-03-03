@@ -9,6 +9,8 @@ import { MdOutlineSportsSoccer } from "react-icons/md";
 import { TbCategoryPlus } from "react-icons/tb";
 import { BiCameraMovie } from "react-icons/bi";
 import { useLocation } from 'react-router-dom';
+import { IoFlashOutline } from "react-icons/io5";
+import { LiaDownloadSolid } from "react-icons/lia";
 
 const Header = () => {
 
@@ -20,23 +22,50 @@ const Header = () => {
   }, [location.pathname]);
 
   return (
-    <nav className="header">
+    <>
+    <nav className="headerPc">
         <img src={logo} alt="" />
         <div className="icons">
-            <CgProfile className='glarge'/>
-            <IoSearchOutline className='glarge'/>
+            <CgProfile />
+            <IoSearchOutline />
             {isHomePage ? (
-              <GoHomeFill className='glarge' style={{ color: 'white', transform : "Scale(1.2)" }} />
+              <GoHomeFill  style={{ color: 'white', transform : "Scale(1.2)" }} />
             ) : (
-              <GoHomeFill className='glarge' />
+              <GoHomeFill  />
             )}
-            <PiTelevisionSimple className='glarge'/>
-            <BiCameraMovie className='glarge'/>
-            <MdOutlineSportsSoccer className='glarge'/>
-            <TbCategoryPlus className='glarge'/>
+            <PiTelevisionSimple />
+            <BiCameraMovie />
+            <MdOutlineSportsSoccer />
+            <TbCategoryPlus />
         </div>
         
     </nav>
+
+    <nav className="headerMobile">
+        <div className="iconsMobile">
+            <div className="iconAndName">
+              <GoHomeFill/>
+              <h4>Home</h4>
+            </div>
+            <div className="iconAndName">
+              <IoSearchOutline />
+              <h4>Search</h4>
+            </div>
+            <div className="iconAndName">
+              <IoFlashOutline />
+              <h4>New & Hot</h4>
+            </div>
+            <div className="iconAndName">
+              <LiaDownloadSolid />
+              <h4>Downloads</h4>
+            </div>
+            <div className="iconAndName">
+              <CgProfile />
+              <h4>My Space</h4>
+            </div>
+        </div>
+    </nav>
+    </>
   )
 }
 
