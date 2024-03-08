@@ -1,4 +1,7 @@
 #banner{
+    > #logoMobile{
+        display: none;
+    }
     >video{
         min-height: 100%;
         min-width: 100%;
@@ -114,6 +117,17 @@
 
 @media (max-width:600px){
     #banner{
+        position: relative;
+
+        > #logoMobile {
+            display: block;
+            position: absolute;
+            top: -15%;
+            z-index: 3;
+            height: 10px;
+            padding: 60px 10px;
+            background-color: transparent;
+        }
         > video {
             display: none;
         }
@@ -129,38 +143,77 @@
         }
 
         > #bannerDetailsMobile{
-            border: 2px solid red;
+            background: linear-gradient( to bottom, transparent 5px, rgb(0, 0, 0) 100px);
             position: absolute;
             width: 100vw;
             top: 200px;
             text-align: center;
+            padding-bottom: 300px;
+            
 
             > #bannerTitleMobile{
-                border: 2px solid green;
                 color: white;
+                background-color: transparent;
             }
 
             > #buttonsMobile{
-                border: 2px solid blue;
-                margin: 2px 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 5px 60px;
+                background-color: transparent;
+                > #addToMobile {
+                    padding: 13px;
+                    color: white;
+                    margin-left: 12px;
+                    border-radius: 10px;
+                    background-color: rgba(193, 193, 193, 0.333);
+                    border-color: transparent;
+
+                    > svg {
+                        background-color: transparent;
+                    }
+
+                    
+                }
 
                 > #bannerPlayButtonMobile{
                     width: 200px;
-                }
+                    border-radius: 10px;
+                    padding: 10px 5px; 
+                    background-color: rgba(193, 193, 193, 0.333);
+                    border-color: transparent;
 
-                > svg {
-                    color: white;
+                    > svg {
+                        background-color: transparent;
+                        color: white;
+                    }
+
+                    > span{
+                        color: white;
+                        font-weight: bold;
+                        font-size: 15px;
+                        padding-left: 10px;
+                        background-color: transparent;
+                    }
                 }
             }
 
+
+    
             #bannerGenreMobile{
                 display: flex;
                 justify-content:space-evenly;
                 margin: 0 60px;
-                border: 2px solid yellow;
                 font-size: 10px;
                 padding: 5px 0;
-            
+                color: white;
+                font-weight: bold;
+                background-color: transparent;
+                
+                > li {
+                    background-color: transparent;
+                }
                 > #firstMobile {
                     list-style: none;
                 }
@@ -170,11 +223,14 @@
         
     }
 
+#genreMobile{
+    background-color: transparent;
+}
+
 #bannerGenre{
     display: flex;
     justify-content:space-evenly;
     margin: 0 60px;
-    border: 2px solid yellow;
     font-size: 10px;
     padding: 5px 0;
 
@@ -183,8 +239,5 @@
     }
 }
 
-// #button{
-//     margin: 0 30px;
-// }
 
 }

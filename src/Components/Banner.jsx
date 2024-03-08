@@ -3,6 +3,7 @@ import mobileBanner from '../mobileBanner.png';
 import './Banner.scss';
 import { FaPlay } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa6";
+import logo from "../logo.png";
 
 const Banner = () => {
 
@@ -11,6 +12,7 @@ const Banner = () => {
         <video autoPlay muted id='videoRender'>
           <source src={banner} type='video/mp4' />
         </video>
+        <img id='logoMobile' src={logo} alt="" />
         <img src={mobileBanner} alt="error" id='imageRender'/>
         <div id='bannerDetails'>
           <h1 id='bannerTitle'>AARYA</h1>
@@ -32,7 +34,7 @@ const Banner = () => {
 
         <div id='bannerDetailsMobile'>
           <h1 id='bannerTitleMobile'>AARYA</h1>
-          <div>
+          <div id='genreMobile'>
           <ul id='bannerGenreMobile'>
             <li id='firstMobile'>2024</li>
             <li>Thriller</li>
@@ -41,8 +43,8 @@ const Banner = () => {
           </ul>
           </div>
           <div id='buttonsMobile'>
-            <button id="bannerPlayButtonMobile"><FaPlay /><span>Watch Now</span></button>
-            <FaPlus id='addToMobile'/>
+            <button id="bannerPlayButtonMobile"><FaPlay /><span>Subscribe to Watch</span></button>
+            <button id='addToMobile'><FaPlus /></button>
           </div>
         </div>
     </div>

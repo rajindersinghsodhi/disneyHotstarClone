@@ -53,11 +53,12 @@
     .headerMobile{
         display: flex;
         position: fixed;
+        z-index: 5;
         bottom: 0;
         width: 100vw;
         height: 60px;
         // border: 2px solid red;
-        background-color: rgb(7, 16, 28);
+        background-color: rgb(0, 0, 0);
 
     }
 
